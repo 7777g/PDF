@@ -1,6 +1,6 @@
 import streamlit as st
 from typing import List, Sequence, TypedDict, Annotated
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain_core.messages import BaseMessage, HumanMessage,AIMessage
 from langgraph.graph import END, START,StateGraph, add_messages
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -58,7 +58,8 @@ if uploaded_file:
     
     
 
-
+import os
+os.environ["GOOGLE_API_KEY"] = "AIzaSyC8ZEpqUf9DL3WFLtt3_VjcSStwIgv34sM"
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
 
 
