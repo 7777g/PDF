@@ -58,9 +58,7 @@ if uploaded_file:
     
     
 
-import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyC8ZEpqUf9DL3WFLtt3_VjcSStwIgv34sM"
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+
 
 
 from langchain.prompts import PromptTemplate
